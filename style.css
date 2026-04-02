@@ -153,3 +153,13 @@ body {
     transform: rotate(360deg);
   }
 }
+
+#number {
+  animation: jitter 0.1s infinite;
+}
+
+@keyframes jitter {
+  0% { transform: translate(0px, 0px); }
+  50% { transform: translate(1px, -1px); }
+  100% { transform: translate(0px, 0px); }
+}
