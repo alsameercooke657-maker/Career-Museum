@@ -46,3 +46,8 @@ startScreen.addEventListener("click", () => {
     }
   }, 1000);
 });
+
+document.body.style.background = "white";
+setTimeout(() => {
+  document.body.style.background = "black";
+}, 50);
