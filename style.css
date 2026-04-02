@@ -90,12 +90,24 @@ body {
   width: 200px;
   height: 200px;
   margin: auto;
+
+  background: #d9d9d9; /*film gray*/
+  overflow: hidden;
+}
+
+/* Circle */
+.circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 4px solid black;
+  border-radius: 50%;
 }
 
 /* Crosshair lines */
 .crosshair {
   position: absolute;
-  background: white;
+  background: black;
 }
 
 .horizontal {
@@ -122,6 +134,7 @@ body {
   justify-content: center;
   font-size: 100px;
   font-weight: bold;
+  color: black;
 }
 
 /* Rotating sweep line */
@@ -156,4 +169,13 @@ body {
   0% { transform: translate(0px, 0px); }
   50% { transform: translate(1px, -1px); }
   100% { transform: translate(0px, 0px); }
+}
+
+.film-frame {
+  background: radial-gradient(
+    circle,
+    #eeeeee 0%,
+    #cccccc 70%,
+    #bfbfbf 100%
+  );
 }
