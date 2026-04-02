@@ -15,53 +15,16 @@ section {
   font-size: 24px;
 }
 
-.hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
+body {
+  margin: 0;
+  font-family: Georgia, serif;
 
-  /* Candle-like glow */
-  background: radial-gradient(
-    circle at top center,
-    #ffcc66 0%,
-    #ff884d 25%,
-    #1a1a1a 70%
+  background: linear-gradient(
+    to bottom,
+    #ff7a18 0%,     /* flame orange */
+    #ffb36b 25%,    /* warm glow */
+    #ffe0b2 55%,    /* wax */
+    #fffaf2 80%,    /* soft fade */
+    #ffffff 100%    /* clean white */
   );
-  overflow: hidden;
-  position: relative;
-}
-
-@keyframes flicker {
-  0%   { filter: brightness(1); transform: scale(1); }
-  25%  { filter: brightness(1.05); }
-  50%  { filter: brightness(0.98); transform: scale(1.01); }
-  75%  { filter: brightness(1.08); }
-  100% { filter: brightness(1); transform: scale(1); }
-}
-
-.hero {
-  animation: flicker 3s infinite ease-in-out;
-}
-
-.glow {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(
-    circle at top center,
-    rgba(255, 200, 120, 0.35),
-    transparent 60%
-  );
-  pointer-events: none;
-}
-
-.hero h1,
-.hero p {
-  position: relative;
-  z-index: 2;
 }
