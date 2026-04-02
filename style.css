@@ -28,3 +28,17 @@ body {
     #ffffff 100%    /* clean white */
   );
 }
+
+.hero h1,
+.hero p {
+  color: red;
+}
+
+.exhibit1 h2,
+.exhibit1 p,
+.exhibit2 h2,
+.exhibit2 p,
+.exhibit3 h2,
+.exhibit3 p {
+  color: red;
+}
