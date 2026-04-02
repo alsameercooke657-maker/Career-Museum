@@ -52,3 +52,11 @@ document.body.style.background = "white";
 setTimeout(() => {
   document.body.style.background = "black";
 }, 50);
+
+function endIntro() {
+  clearInterval(interval);
+
+  intro.style.display = "none";
+
+  document.getElementById("film-gallery").classList.remove("hidden");
+}
