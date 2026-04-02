@@ -22,9 +22,9 @@ body {
   background: linear-gradient(
     to bottom,
     #ff7a18 0%,     /* flame orange */
-    #ffb36b 25%,    /* warm glow */
-    #ffe0b2 55%,    /* wax */
-    #fffaf2 80%,    /* soft fade */
+    #ffb36b 20%,    /* warm glow */
+    #ffe0b2 40%,    /* wax */
+    #fffaf2 75%,    /* soft fade */
     #ffffff 100%    /* clean white */
   );
 }
