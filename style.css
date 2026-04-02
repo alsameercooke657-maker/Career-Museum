@@ -1,0 +1,16 @@
+body {
+  background-color: #111;
+  color: white;
+  font-family: Georgia, serif;
+  margin: 0;
+}
+
+section {
+  padding: 60px;
+  border-bottom: 1px solid #444;
+}
+
+.hero {
+  text-align: center;
+  font-size: 24px;
+}
