@@ -90,7 +90,6 @@ body {
   width: 200px;
   height: 200px;
   margin: auto;
-
 }
 
 /* Circle */
@@ -132,7 +131,6 @@ body {
   justify-content: center;
   font-size: 100px;
   font-weight: bold;
-  color: white;
 }
 
 /* Rotating sweep line */
