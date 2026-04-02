@@ -46,3 +46,26 @@ body {
     transform: scale(1.1);
   }
 }
+
+/* Film grain overlay */
+#intro::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  opacity: 0.2;
+}
+
+/* Flicker animation */
+@keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.92; }
+  100% { opacity: 1; }
+}
+
+#intro {
+  animation: flicker 0.15s infinite;
+}
