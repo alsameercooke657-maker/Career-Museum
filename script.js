@@ -1,12 +1,11 @@
-const startScreen = document.getElementById("startScreen");
-const countdown = document.getElementById("countdown");
-const number = document.getElementById("number");
 const intro = document.getElementById("intro");
-const site = document.getElementById("site");
+const gallery = document.getElementById("film-gallery");
+const startScreen = document.getElementById("startScreen");
+const number = document.getElementById("number");
 
 let count = 5;
+let interval;
 
-// Simple beep (no external files needed)
 function beep() {
   const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   const osc = audioCtx.createOscillator();
@@ -14,38 +13,39 @@ function beep() {
 
   osc.type = "square";
   osc.frequency.value = 800;
-
   gain.gain.value = 0.1;
 
   osc.connect(gain);
   gain.connect(audioCtx.destination);
 
   osc.start();
-  osc.stop(audioCtx.currentTime + 0.15);
+  osc.stop(audioCtx.currentTime + 0.1);
 }
 
-startScreen.addEventListener("click", () => {
-  startScreen.classList.add("hidden");
-  countdown.classList.remove("hidden");
-  document.querySelector(".film-frame").classList.add("start");
-
-  const interval = setInterval(() => {
-    beep();
+function startCountdown() {
+  interval = setInterval(() => {
     number.textContent = count;
+    beep();
 
     count--;
 
     if (count < 0) {
       clearInterval(interval);
-
-      intro.classList.add("fade");
-
-      setTimeout(() => {
-        intro.style.display = "none";
-        site.classList.remove("hidden");
-      }, 800);
+      showGallery();
     }
   }, 1000);
+}
+
+function showGallery() {
+  intro.classList.add("hidden");
+  gallery.classList.remove("hidden");
+}
+
+startScreen.addEventListener("click", () => {
+  startScreen.classList.add("hidden");
+
+  count = 5; // reset just in case
+  startCountdown();
 });
 
 document.body.style.background = "white";
