@@ -75,3 +75,41 @@ body {
 
   font-size: 32px;
 }
+
+#film-gallery {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  background: black;
+
+  padding-top: 40px;
+}
+
+.museum-title {
+  text-align: center;
+
+  margin-bottom: 30px;
+
+  color: white;
+}
+
+.museum-title h1 {
+  font-size: 56px;
+
+  margin-bottom: 10px;
+
+  letter-spacing: 2px;
+
+  text-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+.museum-title p {
+  font-size: 20px;
+
+  opacity: 0.8;
+}
