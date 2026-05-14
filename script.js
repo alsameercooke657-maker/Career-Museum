@@ -52,3 +52,13 @@ document.body.style.background = "white";
 setTimeout(() => {
   document.body.style.background = "black";
 }, 50);
+
+function endIntro() {
+  clearInterval(interval);
+
+  // Hide intro completely
+  document.getElementById("intro").classList.add("hidden");
+
+  // Show gallery AFTER countdown
+  document.getElementById("film-gallery").classList.remove("hidden");
+}
