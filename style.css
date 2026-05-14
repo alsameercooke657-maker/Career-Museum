@@ -1,87 +1,67 @@
 body {
   margin: 0;
   background: black;
-  color: white;
   font-family: Georgia, serif;
 }
 
-/* Rotating sweep line */
-.film-frame::after {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 50%;
-  background: white;
-  top: 50%;
-  left: 50%;
-  transform-origin: top center;
+#film-gallery {
+  min-height: 100vh;
 
-  animation: sweep 1s linear infinite;
-  animation-play-state: running;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-@keyframes sweep {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-@keyframes jitter {
-  0% { transform: translate(0px, 0px); }
-  50% { transform: translate(1px, -1px); }
-  100% { transform: translate(0px, 0px); }
-}
-
-.film-frame {
-  background: radial-gradient(
-    circle,
-    #eeeeee 0%,
-    #cccccc 70%,
-    #bfbfbf 100%
-  );
+  background: black;
 }
 
 .grid {
   display: grid;
+
   grid-template-columns: repeat(2, 1fr);
+
   gap: 30px;
 
   width: 85vw;
+
   padding: 40px;
 }
 
 .film-card {
   position: relative;
-  overflow: hidden;
 
   height: 300px;
 
+  overflow: hidden;
+
   border-radius: 10px;
-  border: 2px solid rgba(255,255,255,0.15);
 
   cursor: pointer;
 
-  transition: transform 0.3s ease,
-              border 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .film-card:hover {
   transform: scale(1.03);
-  border: 2px solid rgba(255,255,255,0.6);
 }
+
 .film-card img {
   width: 100%;
   height: 100%;
+
   object-fit: cover;
 
   filter: brightness(0.6);
+
+  transition: transform 0.4s ease;
 }
+
+.film-card:hover img {
+  transform: scale(1.05);
+}
+
 .overlay {
   position: absolute;
+
   bottom: 20px;
   left: 20px;
 
@@ -92,14 +72,6 @@ body {
 
 .overlay h2 {
   margin: 0;
+
   font-size: 32px;
-}
-
-.overlay p {
-  margin-top: 5px;
-  font-size: 18px;
-}
-
-.hidden {
-  display: none !important;
 }
