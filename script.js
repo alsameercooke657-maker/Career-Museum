@@ -64,3 +64,5 @@ if (silentEraCard) {
     }
   });
 }
+
+console.log("JS loaded");
