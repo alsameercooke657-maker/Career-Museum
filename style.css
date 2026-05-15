@@ -218,38 +218,27 @@ p {
     justify-content: center;
     align-items: center;
 
-    position: relative;
+    padding: 20px;
 }
 
-.golden-overlay {
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.65),
-        rgba(30, 10, 5, 0.75)
-    );
+.gold-box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
 
-    padding: 50px;
-    border-radius: 12px;
-
-    max-width: 900px;
+    max-width: 800px;
     text-align: center;
 
-    border: 1px solid rgba(255, 215, 120, 0.2);
+    border-radius: 10px;
 }
 
 .golden-age h2 {
-    color: #f5e6c8;
-    font-size: 3rem;
-    letter-spacing: 2px;
-
-    margin-bottom: 25px;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
 .golden-age p {
-    color: #f2f2f2;
-    font-size: 1.2rem;
-    line-height: 1.8;
-
-    max-width: 850px;
-    margin: 0 auto;
+    color: #e6e6e6;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
