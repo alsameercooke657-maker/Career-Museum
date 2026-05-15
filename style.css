@@ -83,6 +83,7 @@ p {
 .origin-era {
     height: 100vh;
 
+    background-image: url('./images/kinetoscope.jpg');
     background-color: #111;
 
     display: flex;
