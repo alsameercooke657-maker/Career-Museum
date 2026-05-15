@@ -1,23 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  console.log("JS LOADED");
+  console.log("JS IS RUNNING");
 
-  const silentEraCard = document.getElementById("silentEraCard");
+  const silentEraCard = document.querySelector("#silentEraCard");
 
-  console.log("Silent card:", silentEraCard);
+  console.log("Silent card found:", silentEraCard);
 
-  if (!silentEraCard) return;
+  if (!silentEraCard) {
+    console.log("ERROR: Silent Era card not found. Check ID.");
+    return;
+  }
 
   silentEraCard.addEventListener("click", () => {
 
-    console.log("CLICKED SILENT ERA");
-
     const panel = silentEraCard.querySelector(".panel");
-
-    if (!panel) {
-      console.log("NO PANEL FOUND");
-      return;
-    }
 
     panel.classList.toggle("hidden");
 
