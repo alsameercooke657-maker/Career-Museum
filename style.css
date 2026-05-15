@@ -42,3 +42,40 @@ p {
     color: #dddddd;
     font-size: 1.4rem;
 }
+
+.silent-era {
+    height: 100vh;
+
+    background-image: url('./images/metropolis.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 40px;
+}
+
+.silent-overlay {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 50px;
+    border-radius: 10px;
+
+    max-width: 900px;
+}
+
+.silent-era h2 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.silent-era p {
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
