@@ -1,29 +1,13 @@
-window.onload = () => {
+window.onload = function () {
+  console.log("LOADED");
 
-  console.log("PAGE FULLY LOADED");
+  const el = document.getElementById("silentEraCard");
 
-  const silentEraCard = document.getElementById("silentEraCard");
+  console.log("FOUND ELEMENT:", el);
 
-  console.log("Silent card:", silentEraCard);
+  if (!el) return;
 
-  if (!silentEraCard) {
-    console.log("Silent Era card STILL not found");
-    return;
-  }
-
-  silentEraCard.addEventListener("click", () => {
-
-    console.log("CLICK WORKS");
-
-    const panel = silentEraCard.querySelector(".panel");
-
-    if (!panel) {
-      console.log("NO PANEL FOUND");
-      return;
-    }
-
-    panel.classList.toggle("hidden");
-
-  });
-
+  el.onclick = function () {
+    alert("CLICK WORKS");
+  };
 };
