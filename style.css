@@ -207,7 +207,7 @@ p {
 }
 
 .golden-era {
-    height: 100vh;
+    min-height: 100vh;
 
     background-image: url('./images/casablanca.jpg');
     background-size: cover;
@@ -222,14 +222,14 @@ p {
     padding: 40px;
 }
 
-.gold-overlay {
+.golden-overlay {
     background-color: rgba(0, 0, 0, 0.65);
     padding: 50px;
     border-radius: 10px;
 
     max-width: 900px;
 }
-
+    
 .golden-era h2 {
     color: white;
     font-size: 3rem;
