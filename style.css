@@ -172,3 +172,36 @@ p {
     font-size: 0.9rem;
     color: #ddd;
 }
+
+.era-transition {
+    grid-column: 1 / -1; /* makes it span full width of gallery */
+    margin-top: 60px;
+
+    background: rgba(0, 0, 0, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+
+    padding: 40px;
+    text-align: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+.era-transition p {
+    color: #e6e6e6;
+    font-size: 1.1rem;
+    line-height: 1.7;
+
+    max-width: 900px;
+    margin: 0 auto 25px auto;
+}
+
+.era-transition h3 {
+    color: white;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+
+.era-transition h3::after {
+    content: " →";
+}
