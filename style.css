@@ -80,6 +80,40 @@ p {
     line-height: 1.8;
 }
 
+.origin-era {
+    height: 100vh;
+
+    background-color: #111;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 40px;
+}
+
+.origin-overlay {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 50px;
+    border-radius: 10px;
+
+    max-width: 900px;
+}
+
+.origin-era h2 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.origin-era p {
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
 .bridge {
     height: 40vh;
     display: flex;
