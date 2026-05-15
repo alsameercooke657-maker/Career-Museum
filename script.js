@@ -53,12 +53,9 @@ setTimeout(() => {
   document.body.style.background = "black";
 }, 50);
 
-function endIntro() {
-  clearInterval(interval);
+const silentEraCard = document.getElementById("silentEraCard");
 
-  // Hide intro completely
-  document.getElementById("intro").classList.add("hidden");
-
-  // Show gallery AFTER countdown
-  document.getElementById("film-gallery").classList.remove("hidden");
-}
+silentEraCard.addEventListener("click", () => {
+  const panel = silentEraCard.querySelector(".panel");
+  panel.classList.toggle("hidden");
+});
