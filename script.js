@@ -1,3 +1,5 @@
+console.log("JS IS RUNNING");
+
 const intro = document.getElementById("intro");
 const gallery = document.getElementById("film-gallery");
 const startScreen = document.getElementById("startScreen");
