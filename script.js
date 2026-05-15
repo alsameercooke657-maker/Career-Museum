@@ -1,13 +1,27 @@
 window.onload = function () {
-  console.log("LOADED");
 
-  const el = document.getElementById("silentEraCard");
+  const silentEraCard = document.getElementById("silentEraCard");
 
-  console.log("FOUND ELEMENT:", el);
+  if (!silentEraCard) return;
 
-  if (!el) return;
+  silentEraCard.addEventListener("click", () => {
 
-  el.onclick = function () {
-    alert("CLICK WORKS");
-  };
+    const panel = silentEraCard.querySelector(".panel");
+
+    if (!panel) {
+      console.log("Panel not found");
+      return;
+    }
+
+    console.log("Toggling panel");
+
+    // FORCE visibility instead of relying on class toggle
+    if (panel.style.display === "none" || panel.style.display === "") {
+      panel.style.display = "flex";
+    } else {
+      panel.style.display = "none";
+    }
+
+  });
+
 };
