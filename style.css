@@ -138,14 +138,14 @@ p {
 }
 
 .tech-era h2 {
-    color: white;
+    color: black;
     font-size: 3rem;
     margin-bottom: 25px;
     letter-spacing: 2px;
 }
 
 .tech-era p {
-    color: #e0e0e0;
+    color: black;
     font-size: 1.2rem;
     line-height: 1.8;
 }
