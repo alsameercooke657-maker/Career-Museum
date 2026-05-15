@@ -44,7 +44,7 @@ p {
 }
 
 .silent-era {
-    height: 100vh;
+    min-height: 100vh;
 
     background-image: url('./images/metropolis.jpg');
     background-size: cover;
