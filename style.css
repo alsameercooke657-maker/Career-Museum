@@ -96,10 +96,11 @@ p {
 
 .film-wall {
     background: #0b0b0b;
-    padding: 100px 40px;
+    padding: 140px 40px;
+    min-height: 120vh;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 40px;
 }
 
 .film-item {
