@@ -55,7 +55,12 @@ setTimeout(() => {
 
 const silentEraCard = document.getElementById("silentEraCard");
 
-silentEraCard.addEventListener("click", () => {
-  const panel = silentEraCard.querySelector(".panel");
-  panel.classList.toggle("hidden");
-});
+if (silentEraCard) {
+  silentEraCard.addEventListener("click", () => {
+    const panel = silentEraCard.querySelector(".panel");
+
+    if (panel) {
+      panel.classList.toggle("hidden");
+    }
+  });
+}
